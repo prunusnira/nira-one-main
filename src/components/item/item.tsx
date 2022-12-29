@@ -2,12 +2,12 @@ import { ItemOuter } from "./item.style";
 
 type Props = {
     children: React.ReactNode;
-    testBGColor?: string;
+    bgImage: string;
 };
 
-const Item = ({ children, testBGColor }: Props) => {
+const Item = ({ children, bgImage }: Props) => {
     return (
-        <ItemOuter className="target" testBGColor={testBGColor}>
+        <ItemOuter className="target" bgImage={bgImage}>
             {children}
         </ItemOuter>
     );

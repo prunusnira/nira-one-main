@@ -5,8 +5,10 @@ const useIntersect = () => {
 
     const callback: IntersectionObserverCallback = (entries, observer) => {
         entries.forEach((entry, i) => {
-            if (entry.isIntersecting) {
-                alert(`${(entry.target as HTMLDivElement).textContent} entry`);
+            if (entry.isIntersecting && entry.intersectionRatio > 0) {
+                console.log(
+                    `${(entry.target as HTMLDivElement).textContent} entry`
+                );
             }
         });
     };
