@@ -22,7 +22,7 @@ const Others = ({ bgImage }: Props) => {
                         text={<FontAwesomeIcon icon={faGithub} />}
                     />
                     <ImageButton
-                        src="https://prunusnira.tistory.com"
+                        src="https://blog.nira.one"
                         text={<FontAwesomeIcon icon={faBlog} />}
                     />
                 </IconWrap>
